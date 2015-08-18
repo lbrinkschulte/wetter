@@ -13,6 +13,7 @@
 		9FE821851B83532400D17C34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FE821841B83532400D17C34 /* Assets.xcassets */; };
 		9FE821881B83532400D17C34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE821861B83532400D17C34 /* LaunchScreen.storyboard */; };
 		9FE821911B8355A000D17C34 /* CitiesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE821901B8355A000D17C34 /* CitiesTableViewController.m */; };
+		9FE821941B8360D200D17C34 /* CityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE821931B8360D200D17C34 /* CityDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		9FE821891B83532400D17C34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FE8218F1B8355A000D17C34 /* CitiesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitiesTableViewController.h; sourceTree = "<group>"; };
 		9FE821901B8355A000D17C34 /* CitiesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitiesTableViewController.m; sourceTree = "<group>"; };
+		9FE821921B8360D200D17C34 /* CityDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityDetailViewController.h; sourceTree = "<group>"; };
+		9FE821931B8360D200D17C34 /* CityDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 				9FE8217B1B83532400D17C34 /* AppDelegate.h */,
 				9FE8217C1B83532400D17C34 /* AppDelegate.m */,
 				9FE821811B83532400D17C34 /* Main.storyboard */,
+				9FE821921B8360D200D17C34 /* CityDetailViewController.h */,
+				9FE821931B8360D200D17C34 /* CityDetailViewController.m */,
 				9FE8218F1B8355A000D17C34 /* CitiesTableViewController.h */,
 				9FE821901B8355A000D17C34 /* CitiesTableViewController.m */,
 				9FE821841B83532400D17C34 /* Assets.xcassets */,
@@ -149,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FE821941B8360D200D17C34 /* CityDetailViewController.m in Sources */,
 				9FE8217D1B83532400D17C34 /* AppDelegate.m in Sources */,
 				9FE8217A1B83532400D17C34 /* main.m in Sources */,
 				9FE821911B8355A000D17C34 /* CitiesTableViewController.m in Sources */,
