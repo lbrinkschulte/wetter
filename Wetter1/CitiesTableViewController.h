@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CitiesTableViewController.h
 //  Wetter1
 //
 //  Created by Volker Funke on 18.08.15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface CitiesTableViewController : UITableViewController
 
 @end
-
