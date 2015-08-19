@@ -9,6 +9,7 @@
 #import "CitiesTableViewController.h"
 
 #import "CityDetailViewController.h"
+#import "URLReader.h"
 
 @interface CitiesTableViewController ()
 @end
@@ -18,11 +19,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"Cities";
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    URLReader *reader = [URLReader urlReader];
+    NSURL *hamelnURL = [URLReader urlForCity:@"Hameln" andCountry:@"DE"];
+    void (^handler)(NSDictionary *) = ^(NSDictionary *dict) {
+        NSNumber *temp =[dict valueForKeyPath:@"main.temp"];
+        NSNumber *luftdruck =[dict valueForKeyPath:@"main.pressure"];
+        NSNumber *longitude =[dict valueForKeyPath:@"coord.lon"];
+        NSNumber *latitude =[dict valueForKeyPath:@"coord.lat"];
+        
+        NSLog(@"temperatur: %f °C", temp.floatValue-273.15f);
+        NSLog(@"Luftdruck: %f hP", luftdruck.floatValue);
+        NSLog(@"Längengrad: %f", longitude.floatValue);
+        NSLog(@"Breitengrad: %f", latitude.floatValue);
+    };
+    [reader queryAsyncURL:hamelnURL handler:handler];
 }
 
 - (void)didReceiveMemoryWarning {
